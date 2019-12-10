@@ -19,11 +19,10 @@ do
     coinTwo="$( flipCoin $((RANDOM%2)) )"
     if [[ $coinOne == $isHead ]] && [[ $coinTwo == $isHead ]]
     then 
-         #coin_dictionary[$counter]="Head"
          HHCount=$(( HHCount + 1))
     elif [[ $coinOne == $isTail ]] && [[ $coinTwo == $isTail ]]
     then
-         HHCount=$(( TTCount + 1  ))
+         TTCount=$(( TTCount + 1  ))
     elif [[ $coinOne == $isHead ]] && [[ $coinTwo == $isTail ]]
     then
          HTCount=$(( HTCount + 1))
